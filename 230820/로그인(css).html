@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 로그인</title>
+    <style>
+    p{
+        color: darkgray;
+    }
+    body{
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+    }
+    div{
+        margin:auto;
+        width : 330px;
+        background-color: white;
+        border: hidden;
+    }
+
+    input{
+        width: 85%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+        border:solid 1px;
+        margin-bottom: 15px;
+    }
+
+    .in{
+        margin-bottom:10px;
+    }
+    input[type="checkbox"]{
+        width: 15px;
+        height: 15px;
+        
+    }
+    label{
+        display: inline;
+        width: 100px;
+    }
+    #btn{
+        background-color: royalblue;
+        margin-bottom: 30px;
+        color:white;
+        }                
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2><strong>로그인</strong></h2>
+        <p>아이디와 비밀번호를 입력하고 로그인하세요</p>
+    </div>
+    <div style="text-align: center;">
+        <div action="">
+            <input type="text" placeholder="아이디" class="in">
+            <input type="text" placeholder="비밀번호" class="in">
+    </div>
+    <div style="text-align: left;" >        
+        <input type="checkbox" id="chkBox"/>
+        <label for="chkBox">로그인 저장</label>      
+          
+    </div>
+    <input type="button" id="btn" value="로그인";"> 
+</body>
+</html> 
