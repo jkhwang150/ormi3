@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // this : 객체를 가르키는 참조 변수
+        // this는 함수가 실행될때 값이 결정된다.
+        /* let myObj = {
+            val1: 100,
+            func1: function () {
+                console.log(this);
+    } */
+    // 버튼 예제
+    </script>
+    
+    <!-- <button id="btn1">클릭해봐요!</button>
+    <button id="btn2">클릭해봐요!</button> -->
+    <script>
+        /* let myObj = {
+                val1: 100,
+                func1: function () {
+                console.log(this);
+            },
+        };
+
+        let test = myObj.func1;
+
+        let button1 = document.getElementById("btn1");
+        button1.addEventListener("click", myObj.func1);
+        let button2 = document.getElementById("btn2");
+        button2.addEventListener("click", test); */
+</script>
+    <script>
+         //call 메소드
+        // 인수에 this로 사용할 값을 전달
+        /*var peter = {
+            name : 'Peter Parker',
+            sayName : function(감탄사){    
+		        console.log(this.name + 감탄사);
+	}
+}
+
+var bruce = {
+    name : 'Bruce Wayne',
+}
+peter.sayName.call(bruce, '!'); */
+    </script>
+    <script>
+        // apply 메소드
+        // 인수에 this로 사용할 값을 배열로 전달
+        /* var peter = {
+            name : 'Peter Parker',
+            sayName : function(is, is2){    
+		        console.log(this.name+ ' is '+ is + ' or ' + is2);
+	}
+}
+
+var bruce = {
+    name : 'Bruce Wayne',
+}
+
+peter.sayName.apply(bruce, ['batman', 'richman']); */
+    </script>
+    <script>
+        //bind 메소드
+        // this가 고정된 새로운 함수를 반환한다.
+        /* function sayName(){
+          console.log(this.name);
+        }
+
+        var bruce = {
+            name: 'bruce',
+            sayName : sayName
+        }
+
+        var peter = {
+          name : 'peter',
+          sayName : sayName.bind(bruce)
+        }
+
+        peter.sayName();
+        bruce.sayName(); */
+    </script>
+</body>
+</html>
