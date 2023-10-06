@@ -1,0 +1,24 @@
+'''
+앱이름 : main
+이름                   		 views                    html             비고
+''			index		index.html	잘나가는 상품 소개
+'about/'		about		about.html	회사소개
+'contact/'		contact		contact.html	오시는길
+'product/'	 	 product	product.html	상품 목록
+'product/<int:pk>'	 p_post		p_post.html	상세 목록
+
+ 
+앱이름 : qna
+이름                   		 views                    html             비고
+'qna/'			qna		qna.html	qna목록
+'qna/<int:pk2>'		q_post		q_post.html	상세 목록
+
+
+앱이름 : notice
+이름                   		 views                    html             비고
+'notice/'		notice		notice.html	자유게시판/1:1 상담 선택
+'notice/free'		free		free.html	자유게시판 목록
+'notice/free/<int:pk3>	f_post		f_post.html	상세 목록
+'notice/onenone'	onenone		onenone.html	1:1 상담
+'notice/onenone/<int:pk4> o_post	o_post.html	상세 목록
+'''
